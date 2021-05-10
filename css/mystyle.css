@@ -1,0 +1,145 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#jumbotron-1 {
+    margin-top: 56px;
+}
+
+.nav-responsive {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    box-shadow: 1px 1px 5px rgb(173, 173, 173);
+}
+
+.sosmed {
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    background-color: #ffc107;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.teks-responsive {
+    text-align: center;
+}
+
+.btn-responsive {
+    width: 100%;
+}
+
+.novar {
+    font-family: novar;
+}
+
+.nav-jarak-atas {
+    padding-top: 3px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.dropdown-menu {
+    background-color: #ffc107;
+}
+
+#jumbotron-1 .display-4 {
+    font-size: 2.5rem;
+}
+
+#jumbotron-2 hr {
+    width: 40px;
+    border-bottom: 5px solid rgb(59, 59, 59);
+}
+
+#jumbotron-3 hr {
+    width: 40px;
+    border-bottom: 5px solid rgb(59, 59, 59);
+}
+
+#jumbotron-3 .gambar {
+    position: static;
+}
+
+#jumbotron-3 .gambar .card {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#jumbotron-3 .gambar img {
+    filter: brightness(0.9);
+    transition: 2s;
+}
+
+#jumbotron-3 .gambar img:hover {
+    filter: brightness(1.1);
+    transition: 2s;
+}
+
+#jumbotron-3 .gambar .card:hover .fa {
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+
+
+@media (min-width: 992px) {
+
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+    .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+
+    #jumbotron-1 .display-4 {
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    #jumbotron-1 {
+        margin-top: 0px;
+    }
+
+    .nav-responsive {
+        position: static !important;
+        box-shadow: none;
+    }
+
+    #jumbotron-3 .gambar {
+        position: relative;
+    }
+    
+    #jumbotron-3 .gambar .card {
+        position: absolute;
+        right: 0px;
+        bottom: -80px;
+    }
+
+    #jumbotron-3 .gambar .btn {
+        position: absolute;
+        right: 255px;
+        bottom: 50px;
+    }
+
+    .teks-responsive {
+        text-align: left;
+    }
+
+    .btn-responsive {
+        width: auto;
+    }
+    
+}
